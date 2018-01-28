@@ -1,22 +1,32 @@
-# Compiled class file
-*.class
+import java.util.Scanner;
 
-# Log file
-*.log
+public class Quiz2 {
 
-# BlueJ files
-*.ctxt
+	public static void main(String[] args) {
+		/*5 points: Print your name to the command line. Print your results.*/
+			System.out.println("Miryah Adair");
+			
+		/*10 points: use a double to compute the area of a circle. Use 3.14 for pi,;
+		 and area = pi * radius * radius; Print your results.;*/
+			double pi = 3.14;
+			double radius = 7.4;
+			double area = pi * radius * radius;
+			System.out.println("The area is? " + area);
+			
+		/*15 points: Use a scanner to read in an int for a radius. Print your results.;*/
+				Scanner input = new Scanner(System.in);
+				System.out.println("Type a number for the intRadius.");
+				int intRadius = input.nextInt();
+				System.out.println("Enter a number for radius: " + intRadius);
+				
+				
+		/*20 points: use the int you previously read in, convert it to a double, and then calculate the;
+		area of a circle. Use 3.14 for pi, and area = pi * radius * radius; Print your results.'
+		*/
+				System.out.println("Now we have calculated");
+				radius = (int)intRadius;
+				area = pi * radius * radius;
+				System.out.println("The area is? " + area);
+	}
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+}
